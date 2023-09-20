@@ -1,21 +1,21 @@
 .App {
     display: flex;
-    justify-content: space-between; /* Distribute employees in rows and columns */
+    justify-content: space-between; 
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
   }
   
   .item-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribute employees in rows and columns */
+    justify-content: space-between; 
     width: 100%;
     margin-top: 5%;
   }
   
   .employee-card {
-    width: calc(25.33% - 10px); /* Adjust the width for three columns */
-    display: flex; /* Use Flexbox to arrange image and text side by side */
+    width: calc(25.33% - 10px); 
+    display: flex; 
     margin-bottom: 20px;
     padding: 25px;
     border-radius: 5px;
@@ -33,12 +33,12 @@
   
   .image-container svg {
     padding-top: 25%;
-    max-width: 100%; /* Make sure the image/svg fills the container */
+    max-width: 100%; 
     max-height: 100%;
   }
   
   .text-container {
-    flex: 1; /* Let the text container grow to fill remaining space */
+    flex: 1; 
     padding: 10px;
     text-align: left;
   }
