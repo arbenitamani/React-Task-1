@@ -1,16 +1,16 @@
 import React from "react";
-import './App.css';
+import "../App.css";
 import TheItem from "./TheItem.jsx";
-import './styles.css';
-import Vec1 from "./Pages/vec1"; 
-import Vec2 from "./Pages/vec2";
-import Vec3 from "./Pages/vec3";
-import Vec4 from "./Pages/vec4";
-import Vec5 from "./Pages/vec5";
-import Vec6 from "./Pages/vec6";
-import Vec7 from "./Pages/vec7";
-import Vec8 from "./Pages/vec8";
-import Vec9 from "./Pages/vec9";
+import "../styles.css";
+import Vec1 from "../components/vec1"; 
+import Vec2 from "../components/vec2";
+import Vec3 from "../components/vec3";
+import Vec4 from "../components/vec4";
+import Vec5 from "../components/vec5";
+import Vec6 from "../components/vec6";
+import Vec7 from "../components/vec7";
+import Vec8 from "../components/vec8";
+import Vec9 from "../components/vec9";
 
 const items = [
   {
