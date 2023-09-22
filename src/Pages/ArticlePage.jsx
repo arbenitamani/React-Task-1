@@ -10,7 +10,7 @@ const items = [
     version: "3.3.0",
     date: "(14/05/2018)",
     name: "Kevin Joe",
-    image: <img src={require('./images/person')} alt="" />,
+
     description: "File system changed fromDokan to CBFS Host Cloud Drive is now a network drive Various bug fixes and stability impovements Share permissions re-design and optimization",
   },
   {
