@@ -48,51 +48,113 @@
     margin: 10px 0;
    
   }
+
   
-  .article-item-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-  }
+/* ArticlePage.css */
+
+.article-item-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+.item-card {
+  flex: 0 0 calc(33.33% - 20px); /* Calculate the width for each item in a row */
+  max-width: calc(33.33% - 20px); /* Set a maximum width */
+  height: 0; /* Initially set height to 0 */
+  padding-bottom: 33.33%; /* Maintain a 1:1 aspect ratio (square) */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+
   
-  .article-card {
-    width: 100%; 
-    display: flex;
-    margin-bottom: 20px;
-    padding: 25px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  &:hover {
+    transform: translateY(-5px);
   }
-  
-  .artcle-image-container {
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    border: solid 1px gray;
-    border-radius: 50%;
-  }
-  
-  .artcle-image-container svg {
-    padding-top: 25%;
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .article-text-container {
-    flex: 1;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .article-card h2 {
-    font-size: 14px;
-    margin: 10px 0;
-  }
-  
-  .article-card p {
-    font-size: 10px;
-  }
+}
+
+
+
+.item-header {
+  padding-top: 5%;
+  padding-left: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item-date {
+  font-size: 14px;
+ 
+}
+
+.item-version {
+  font-size: 14px;
+  padding: 8px;
+  padding-left: 10px;
+}
+
+.new-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+.name-picture{
+   display: flex;
+   align-items: center;
+  padding-right: 10px;
+}
+
+
+
+.item-details {
+ display: inline-block;
+  color: gray;
+}
+.item-details p {
+ text-align: left;
+ padding-left: 10%;
+  padding-right: 10%;
+ }
+ 
+
+.item-content p {
+  font-size: 20px;
+  padding-left: 20px;
+
+}
+
+.download-button {
+  display: flex;
+  margin-left: 10%;
+  align-self: flex-start;
+  padding-left: 20%;
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+  padding: 12px 40px;
+  border-radius: 23px;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+
 
 
 
