@@ -93,7 +93,7 @@ const items = [
 const getColorForText = (text) => {
   switch (text) {
     case "New":
-      return "light-green";
+      return "green";
     case "Fix":
       return "blue";
     case "Improvement":

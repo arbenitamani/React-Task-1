@@ -2,22 +2,15 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"; // Import necessary components and hooks
 import ItemsPage from "./Pages/ItemsPage";
 import ArticlePage from "./Pages/ArticlePage";
+import Navigation from "./components/navigation";
 
 function App() {
   return (
     <Router> 
       <div className="App">
       
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">First Half</Link>
-            </li>
-            <li>
-              <Link to="/articles">Second Half</Link>
-            </li>
-          </ul>
-        </nav>
+    <Navigation />
+
         
         <Routes> 
           <Route path="/" element={<ItemsPage />} />
