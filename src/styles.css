@@ -1,6 +1,5 @@
 .App {
-    display: flex;
-    justify-content: space-between; 
+  
     margin: 0 auto;
     padding: 25px;
   }
@@ -133,7 +132,8 @@ justify-self: flex-start;
 .item-details {
  display: inline-block;
   color: rgb(198, 198, 198);
-  height: 170px; 
+  position: relative;
+  height: 153px; 
 }
 .item-details p {
  text-align: left;
@@ -157,13 +157,34 @@ justify-self: flex-start;
   background-color: white;
   color: blue;
   border: 1px solid blue;
-  padding: 12px 40px;
+  padding: 10px 40px;
   border-radius: 23px;
   cursor: pointer;
   vertical-align: bottom;
   margin-bottom: 15%;
+
 }
 
+/* Media Queries */
+/* Media Queries for 768px width */
+@media screen and (max-width: 768px) {
+
+  .item-card {
+    max-width: calc(40% - 10px); 
+  }
+}
+
+@media (max-width: 480px) {
+  
+
+  .article-item-container {
+    flex-direction: column; /* Change flex-direction to row for wider layout */
+  }
+  .item-card {
+    max-width: calc(100% - 15px); /* One item per row for screens 400px or more */
+    padding-bottom: 0%; /* Maintain a 1:1 aspect ratio (square) for one item per row */
+  }
+}
 
 
 

@@ -93,13 +93,13 @@ const items = [
 const getColorForText = (text) => {
   switch (text) {
     case "New":
-      return "green";
+      return "#32c259"; // Green in hexadecimal
     case "Fix":
-      return "blue";
+      return "#2b49e0"; // Blue in hexadecimal
     case "Improvement":
-      return "violet";
+      return "#b546d4"; // Violet in hexadecimal
     default:
-      return "black"; 
+      return "#000000"; // Black in hexadecimal
   }
 };
 
