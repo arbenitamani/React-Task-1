@@ -18,7 +18,7 @@ const items = [
     version: "3.3.0",
     date: "(14/05/2018)",
     name: "Kevin Joe",
-    image: <img src={require('../images/person')} alt="" />,
+  
     description: "Introducing Host Cloud Drive - virtual drive functionality \n New Share options and management New, more user friendly design Sync optimizations Various performance improvements and bug fixes ",
   },
   {
