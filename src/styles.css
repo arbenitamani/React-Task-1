@@ -165,14 +165,31 @@ justify-self: flex-start;
 
 }
 
-/* Media Queries */
-/* Media Queries for 768px width */
-@media screen and (max-width: 768px) {
+
+/* Media Query for 480px width and below */
+@media (max-width: 768px) {
+  .article-item-container {
+    flex-direction: row;
+  }
 
   .item-card {
-    max-width: calc(40% - 10px); 
+    width: calc(50% - 7.5px); /* Set a fixed width for .item-card (50% of container width - half of gap) */
+    max-height: none;
+    height: auto;
+    padding-bottom: 0;
+    overflow: visible;
+  }
+
+  .item-details {
+  
+    max-height: none; /* Remove any previously set maximum height */
+    flex-wrap: nowrap;
   }
 }
+
+
+
+
 
 @media (max-width: 480px) {
   
